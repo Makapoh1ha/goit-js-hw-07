@@ -19,7 +19,7 @@ function onImagesClick(event) {
         return;
     }
     const modalWindow = basicLightbox.create(`<div class = "modal">
-    <img src = "${event.target.dataset.source}" width = "800" heigth = "600">
+    <img src = "${event.target.dataset.source}" width = "800" height = "600">
     </div>`, {
         onShow: (modalWindow) => {
             window.addEventListener('keydown', onKeyboardClick);

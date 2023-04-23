@@ -4,10 +4,10 @@ console.log(galleryItems);
 
 const gallery = document.querySelector('.gallery')
 
-gallery.insertAdjacentHTML('beforeend', createGaleryMarkup())
+gallery.insertAdjacentHTML('beforeend', createGalleryMarkup())
 
 
-function createGaleryMarkup() {
+function createGalleryMarkup() {
     return galleryItems.map(({ preview, original, description }) =>
         `<li class="gallery__item">
             <a class="gallery__link" href="${original}">
